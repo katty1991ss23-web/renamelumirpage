@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <title>LUMIRBUD — Будівництво та ремонт під ключ</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Lumirbud, ремонт під ключ, дизайн-проєкт, будівництво, інженерія та безпека" name="keywords">
+    <meta content="Повний цикл будівельних і ремонтних робіт під ключ від компанії LUMIRBUD." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Завантаження...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-4">
+            <!-- Логотип LUMIRBUD -->
+            <a href="index.html" class="navbar-brand ms-3 ms-lg-0">
+                <h2 class="mb-0 text-primary text-uppercase d-inline-flex align-items-center">
+                    <svg class="me-2" width="32" height="36" viewBox="0 0 100 114" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polygon points="50,3 96,29.5 96,84.5 50,111 4,84.5 4,29.5" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+                        <line x1="50" y1="7" x2="50" y2="33" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="36" y1="15" x2="36" y2="39" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="64" y1="15" x2="64" y2="39" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="22" y1="23" x2="22" y2="75" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="78" y1="23" x2="78" y2="75" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="12" y1="33" x2="12" y2="81" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="88" y1="33" x2="88" y2="81" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="36" y1="75" x2="36" y2="99" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="50" y1="81" x2="50" y2="107" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="64" y1="75" x2="64" y2="99" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <polygon points="50,36 74,57 50,78 26,57" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"/>
+                        <path d="M35 57C40 50 45 48 50 48C55 48 60 50 65 57C60 64 55 66 50 66C45 66 40 64 35 57Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                        <circle cx="50" cy="57" r="4.5" fill="currentColor"/>
+                    </svg>
+                    LUMIRBUD
+                </h2>
+            </a>
+
+            <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Основна навігація (7 пунктів + випадаючі списки) -->
+                <div class="navbar-nav mx-auto p-4 p-lg-0">
+                    <div class="nav-item dropdown">
+                        <a href="#services" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" data-i18n="nav_turnkey">Ремонт під ключ</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#services" class="dropdown-item" data-i18n="nav_turnkey_1">Квартири та будинки</a>
+                            <a href="#services" class="dropdown-item" data-i18n="nav_turnkey_2">Комерційні приміщення</a>
+                            <a href="price.html" class="dropdown-item" data-i18n="nav_turnkey_3">Прайс та пакети</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#services" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-i18n="nav_design">Дизайн-проєкт</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#services" class="dropdown-item" data-i18n="nav_design_1">Планувальне рішення</a>
+                            <a href="#services" class="dropdown-item" data-i18n="nav_design_2">3D-візуалізація</a>
+                            <a href="#services" class="dropdown-item" data-i18n="nav_design_3">Авторський нагляд</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#services" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-i18n="nav_build">Будівництво</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#services" class="dropdown-item" data-i18n="nav_build_1">Приватні будинки</a>
+                            <a href="#services" class="dropdown-item" data-i18n="nav_build_2">Прибудови та реконструкція</a>
+                            <a href="#services" class="dropdown-item" data-i18n="nav_build_3">Фасадні та покрівельні роботи</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#services" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-i18n="nav_eng">Інженерія та безпека</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#services" class="dropdown-item" data-i18n="nav_eng_1">Електрика та освітлення</a>
+                            <a href="#services" class="dropdown-item" data-i18n="nav_eng_2">Опалення та водопостачання</a>
+                            <a href="#services" class="dropdown-item" data-i18n="nav_eng_3">Системи безпеки та резерв</a>
+                        </div>
+                    </div>
+
+                    <a href="#calculator" class="nav-item nav-link" data-i18n="nav_calc">Калькулятор вартості</a>
+                    <a href="about.html" class="nav-item nav-link" data-i18n="nav_about">Про нас</a>
+                    <a href="#contact" class="nav-item nav-link" data-i18n="nav_contacts">Контакти</a>
+                </div>
+
+                <!-- Мова + соцмережі -->
+                <div class="d-none d-lg-flex align-items-center gap-2">
+                    <div class="nav-item dropdown">
+                        <a href="#" id="lang-current" class="nav-link dropdown-toggle px-2 text-white" data-bs-toggle="dropdown">UA</a>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                            <a href="#" id="lang-ua" class="dropdown-item active" data-lang="uk">UA</a>
+                            <a href="#" id="lang-en" class="dropdown-item" data-lang="en">EN</a>
+                        </div>
+                    </div>
+                    <a class="btn btn-sm btn-outline-primary border-2" href="#!" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-primary border-2" href="#!" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Carousel Start -->
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img2/poster.png" alt="Ремонт під ключ">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="title mx-5 px-5 animated slideInDown">
+                            <div class="title-center">
+                                <h5>LUMIRBUD</h5>
+                                <h1 class="display-1" data-i18n="hero_1_title">Ремонт під ключ</h1>
+                            </div>
+                        </div>
+                        <p class="fs-5 mb-5 animated slideInDown" data-i18n="hero_1_desc">
+                            Повний цикл робіт: від демонтажу до фінального прибирання.<br>
+                            Ви отримуєте готовий простір без зайвих клопотів.
+                        </p>
+                        <a href="#contact" class="btn btn-primary hero-cta py-3 px-5 animated slideInDown" data-i18n="hero_1_cta">Зв'язатись з нами</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img2/poster2.png" alt="Будівництво та дизайн-проєкти">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="title mx-5 px-5 animated slideInDown">
+                            <div class="title-center">
+                                <h5>LUMIRBUD</h5>
+                                <h1 class="display-1" data-i18n="hero_2_title">Повний спектор послуг</h1>
+                            </div>
+                        </div>
+                        <p class="fs-5 mb-5 animated slideInDown" data-i18n="hero_2_desc">
+                            Чіткі терміни, прозорий кошторис та контроль на кожному етапі.<br>
+                            Від проєктування та інженерії до здачі об'єкта.
+                        </p>
+                        <a href="#calculator" class="btn btn-primary hero-cta py-3 px-5 animated slideInDown" data-i18n="hero_2_cta">Розрахувати вартість</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Попередній</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Наступний</span>
+            </button>
+        </div>
+        <!-- Hero Carousel End -->
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Service Start -->
+    <div id="services" class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5 data-i18n="srv_kicker">Напрямки</h5>
+                        <h1 data-i18n="srv_heading">Основні послуги</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item service-item-left">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/service-1.jpg" alt="Ремонт під ключ">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase" data-i18n="srv_1_title">Ремонт під ключ</h3>
+                            <p class="mb-4" data-i18n="srv_1_desc">
+                                Комплексне оздоблення квартир, будинків та комерційних площ. Демонтаж, чорнові й чистові роботи, контроль якості та фінальна підготовка простору до заселення.
+                            </p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="#contact">
+                                <span data-i18n="srv_1_cta">Замовити розрахунок</span> <i class="fa fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item service-item-right">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="Дизайн-проєкт">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase" data-i18n="srv_2_title">Дизайн-проєкт</h3>
+                            <p class="mb-4" data-i18n="srv_2_desc">
+                                Продумане планування, ергономіка, візуалізації та робоча документація, за якою будівельники працюють без зайвих питань і переробок.
+                            </p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="#contact">
+                                <span data-i18n="srv_2_cta">Обговорити проєкт</span> <i class="fa fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item service-item-left">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/service-3.jpg" alt="Будівництво">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase" data-i18n="srv_3_title">Будівництво</h3>
+                            <p class="mb-4" data-i18n="srv_3_desc">
+                                Зведення об'єктів, добудов та конструкцій із дотриманням технології на кожному етапі — від фундаменту та стін до покрівлі й зовнішнього оздоблення.
+                            </p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="#contact">
+                                <span data-i18n="srv_3_cta">Отримати консультацію</span> <i class="fa fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item service-item-right">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/service-4.jpg" alt="Інженерія та безпека">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                            <h3 class="text-uppercase" data-i18n="srv_4_title">Інженерія та безпека</h3>
+                            <p class="mb-4" data-i18n="srv_4_desc">
+                                Проєктування та монтаж електрики, опалення, водопостачання, систем безпеки й автономності, щоб об'єкт працював стабільно та безпечно.
+                            </p>
+                            <a class="btn btn-outline-primary border-2 px-4" href="#contact">
+                                <span data-i18n="srv_4_cta">Дізнатись більше</span> <i class="fa fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Banner / CTA Start -->
+    <div id="calculator" class="container-fluid py-5 bg-secondary">
+        <div class="container py-5">
+            <div class="row g-0 justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="title mx-5 px-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="title-center">
+                            <h5 data-i18n="cta_kicker">Розрахунок</h5>
+                            <h1 data-i18n="cta_heading">Потрібен попередній прорахунок?</h1>
+                        </div>
+                    </div>
+                    <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s" data-i18n="cta_desc">
+                        Залиште контакти або перейдіть до калькулятора вартості, щоб зорієнтуватися по обсягах і термінах робіт.
+                    </p>
+                    <div class="position-relative wow fadeInUp" data-wow-delay="0.3s">
+                        <input id="cta-input" class="form-control border-0 bg-dark rounded-pill w-100 py-4 ps-4 pe-5" type="text"
+                            placeholder="Ваш телефон або email">
+                        <button type="button" class="btn btn-primary py-3 px-4 position-absolute top-0 end-0 me-2"
+                            style="margin-top: 7px;" data-i18n="cta_btn">Надіслати запит</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner / CTA End -->
+
+
+    <!-- Projects / Cases Start -->
+    <div id="projects" class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5 data-i18n="prj_kicker">Об'єкти</h5>
+                        <h1 data-i18n="prj_heading">Реалізовані проєкти</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="Об'єкт 1">
+                        </div>
+                        <a class="team-name" href="#contact">
+                            <h5 class="text-uppercase mb-0" data-i18n="prj_1">Об'єкт #01</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="Об'єкт 2">
+                        </div>
+                        <a class="team-name" href="#contact">
+                            <h5 class="text-uppercase mb-0" data-i18n="prj_2">Об'єкт #02</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="Об'єкт 3">
+                        </div>
+                        <a class="team-name" href="#contact">
+                            <h5 class="text-uppercase mb-0" data-i18n="prj_3">Об'єкт #03</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="Об'єкт 4">
+                        </div>
+                        <a class="team-name" href="#contact">
+                            <h5 class="text-uppercase mb-0" data-i18n="prj_4">Об'єкт #04</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects / Cases End -->
+
+
+    <!-- Testimonial Start -->
+    <div id="reviews" class="container-fluid py-5 bg-secondary">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5 data-i18n="rev_kicker">Відгуки</h5>
+                        <h1 data-i18n="rev_heading">Що кажуть клієнти</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+                <div class="testimonial-item text-center"
+                    data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                    <p class="fs-5" data-i18n="rev_1_text">
+                        Усе зробили вчасно і без зайвих нервів. Чітка комунікація, зрозумілі етапи й якісний результат на виході.
+                    </p>
+                    <h5 class="text-uppercase" data-i18n="rev_client">Клієнт LUMIRBUD</h5>
+                    <span class="text-primary" data-i18n="rev_1_tag">Ремонт під ключ</span>
+                </div>
+                <div class="testimonial-item text-center"
+                    data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
+                    <p class="fs-5" data-i18n="rev_2_text">
+                        Сподобався підхід до проєктування та інженерії — усі нюанси прорахували заздалегідь, без сюрпризів під час робіт.
+                    </p>
+                    <h5 class="text-uppercase" data-i18n="rev_client">Клієнт LUMIRBUD</h5>
+                    <span class="text-primary" data-i18n="rev_2_tag">Дизайн та реалізація</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer / Contact Start -->
+    <div id="contact" class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <a href="index.html">
+                <h1 class="display-4 mb-3 text-white text-uppercase d-inline-flex align-items-center">
+                    <svg class="me-2" width="44" height="50" viewBox="0 0 100 114" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polygon points="50,3 96,29.5 96,84.5 50,111 4,84.5 4,29.5" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+                        <line x1="50" y1="7" x2="50" y2="33" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="36" y1="15" x2="36" y2="39" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="64" y1="15" x2="64" y2="39" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="22" y1="23" x2="22" y2="75" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="78" y1="23" x2="78" y2="75" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="12" y1="33" x2="12" y2="81" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="88" y1="33" x2="88" y2="81" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="36" y1="75" x2="36" y2="99" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="50" y1="81" x2="50" y2="107" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <line x1="64" y1="75" x2="64" y2="99" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+                        <polygon points="50,36 74,57 50,78 26,57" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"/>
+                        <path d="M35 57C40 50 45 48 50 48C55 48 60 50 65 57C60 64 55 66 50 66C45 66 40 64 35 57Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                        <circle cx="50" cy="57" r="4.5" fill="currentColor"/>
+                    </svg>
+                    LUMIRBUD
+                </h1>
+            </a>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!" aria-label="Phone">
+                    <i class="fa fa-phone"></i>
+                </a>
+            </div>
+            <div class="mb-4">
+                <a href="#contact" class="btn btn-primary py-2 px-4" data-i18n="footer_cta">Зв'язатись з нами</a>
+            </div>
+            <p class="mb-0" data-i18n="footer_copy">&copy; LUMIRBUD. Усі права захищено.</p>
+        </div>
+    </div>
+    <!-- Footer / Contact End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Language Switcher (UA / EN) -->
+    <script>
+        // Словник перекладів: ключ відповідає атрибуту data-i18n в HTML
+        const translations = {
+            uk: {
+                doc_title: "LUMIRBUD — Будівництво та ремонт під ключ",
+                nav_turnkey: "Ремонт під ключ",
+                nav_turnkey_1: "Квартири та будинки",
+                nav_turnkey_2: "Комерційні приміщення",
+                nav_turnkey_3: "Прайс та пакети",
+                nav_design: "Дизайн-проєкт",
+                nav_design_1: "Планувальне рішення",
+                nav_design_2: "3D-візуалізація",
+                nav_design_3: "Авторський нагляд",
+                nav_build: "Будівництво",
+                nav_build_1: "Приватні будинки",
+                nav_build_2: "Прибудови та реконструкція",
+                nav_build_3: "Фасадні та покрівельні роботи",
+                nav_eng: "Інженерія та безпека",
+                nav_eng_1: "Електрика та освітлення",
+                nav_eng_2: "Опалення та водопостачання",
+                nav_eng_3: "Системи безпеки та резерв",
+                nav_calc: "Калькулятор вартості",
+                nav_about: "Про нас",
+                nav_contacts: "Контакти",
+                hero_1_title: "Ремонт під ключ",
+                hero_1_desc: "Повний цикл робіт: від демонтажу до фінального прибирання.<br>Ви отримуєте готовий простір без зайвих клопотів.",
+                hero_1_cta: "Зв'язатись з нами",
+                hero_2_title: "Будівництво та проєкти",
+                hero_2_desc: "Чіткі терміни, прозорий кошторис та контроль на кожному етапі.<br>Від проєктування та інженерії до здачі об'єкта.",
+                hero_2_cta: "Розрахувати вартість",
+                srv_kicker: "Напрямки",
+                srv_heading: "Основні послуги",
+                srv_1_title: "Ремонт під ключ",
+                srv_1_desc: "Комплексне оздоблення квартир, будинків та комерційних площ. Демонтаж, чорнові й чистові роботи, контроль якості та фінальна підготовка простору до заселення.",
+                srv_1_cta: "Замовити розрахунок",
+                srv_2_title: "Дизайн-проєкт",
+                srv_2_desc: "Продумане планування, ергономіка, візуалізації та робоча документація, за якою будівельники працюють без зайвих питань і переробок.",
+                srv_2_cta: "Обговорити проєкт",
+                srv_3_title: "Будівництво",
+                srv_3_desc: "Зведення об'єктів, добудов та конструкцій із дотриманням технології на кожному етапі — від фундаменту та стін до покрівлі й зовнішнього оздоблення.",
+                srv_3_cta: "Отримати консультацію",
+                srv_4_title: "Інженерія та безпека",
+                srv_4_desc: "Проєктування та монтаж електрики, опалення, водопостачання, систем безпеки й автономності, щоб об'єкт працював стабільно та безпечно.",
+                srv_4_cta: "Дізнатись більше",
+                cta_kicker: "Розрахунок",
+                cta_heading: "Потрібен попередній прорахунок?",
+                cta_desc: "Залиште контакти або перейдіть до калькулятора вартості, щоб зорієнтуватися по обсягах і термінах робіт.",
+                cta_placeholder: "Ваш телефон або email",
+                cta_btn: "Надіслати запит",
+                prj_kicker: "Об'єкти",
+                prj_heading: "Реалізовані проєкти",
+                prj_1: "Об'єкт #01",
+                prj_2: "Об'єкт #02",
+                prj_3: "Об'єкт #03",
+                prj_4: "Об'єкт #04",
+                rev_kicker: "Відгуки",
+                rev_heading: "Що кажуть клієнти",
+                rev_1_text: "Усе зробили вчасно і без зайвих нервів. Чітка комунікація, зрозумілі етапи й якісний результат на виході.",
+                rev_2_text: "Сподобався підхід до проєктування та інженерії — усі нюанси прорахували заздалегідь, без сюрпризів під час робіт.",
+                rev_client: "Клієнт LUMIRBUD",
+                rev_1_tag: "Ремонт під ключ",
+                rev_2_tag: "Дизайн та реалізація",
+                footer_cta: "Зв'язатись з нами",
+                footer_copy: "&copy; LUMIRBUD. Усі права захищено."
+            },
+            en: {
+                doc_title: "LUMIRBUD — Construction & Turnkey Renovation",
+                nav_turnkey: "Turnkey Renovation",
+                nav_turnkey_1: "Apartments & Houses",
+                nav_turnkey_2: "Commercial Spaces",
+                nav_turnkey_3: "Pricing & Packages",
+                nav_design: "Design Project",
+                nav_design_1: "Floor Plan & Layout",
+                nav_design_2: "3D Visualization",
+                nav_design_3: "Author Supervision",
+                nav_build: "Construction",
+                nav_build_1: "Private Houses",
+                nav_build_2: "Extensions & Reconstruction",
+                nav_build_3: "Facade & Roofing Works",
+                nav_eng: "Engineering & Security",
+                nav_eng_1: "Electrical & Lighting",
+                nav_eng_2: "Heating & Plumbing",
+                nav_eng_3: "Security & Backup Power",
+                nav_calc: "Cost Calculator",
+                nav_about: "About Us",
+                nav_contacts: "Contacts",
+                hero_1_title: "Turnkey Renovation",
+                hero_1_desc: "Full cycle of works: from demolition to final cleaning.<br>You get a ready space without extra hassle.",
+                hero_1_cta: "Contact Us",
+                hero_2_title: "Construction & Projects",
+                hero_2_desc: "Clear timelines, transparent budget, and control at every stage.<br>From design and engineering to project handover.",
+                hero_2_cta: "Calculate Cost",
+                srv_kicker: "Directions",
+                srv_heading: "Core Services",
+                srv_1_title: "Turnkey Renovation",
+                srv_1_desc: "Comprehensive finishing of apartments, houses, and commercial spaces. Demolition, rough and fine works, quality control, and final preparation for move-in.",
+                srv_1_cta: "Request Estimate",
+                srv_2_title: "Design Project",
+                srv_2_desc: "Thoughtful layout planning, ergonomics, 3D visuals, and working drawings so builders can work without guesswork or rework.",
+                srv_2_cta: "Discuss Project",
+                srv_3_title: "Construction",
+                srv_3_desc: "Building structures, extensions, and facilities following technology at every step — from foundation and walls to roofing and exterior finish.",
+                srv_3_cta: "Get Consultation",
+                srv_4_title: "Engineering & Security",
+                srv_4_desc: "Design and installation of electrical, heating, plumbing, security systems, and backup power so the property runs reliably and safely.",
+                srv_4_cta: "Learn More",
+                cta_kicker: "Estimate",
+                cta_heading: "Need a Preliminary Estimate?",
+                cta_desc: "Leave your contact details or open the cost calculator to get a clear idea of scope and timelines.",
+                cta_placeholder: "Your phone or email",
+                cta_btn: "Send Request",
+                prj_kicker: "Portfolio",
+                prj_heading: "Completed Projects",
+                prj_1: "Project #01",
+                prj_2: "Project #02",
+                prj_3: "Project #03",
+                prj_4: "Project #04",
+                rev_kicker: "Testimonials",
+                rev_heading: "What Clients Say",
+                rev_1_text: "Everything was done on time and stress-free. Clear communication, transparent stages, and solid quality in the end.",
+                rev_2_text: "Great approach to planning and engineering — every detail was calculated in advance with no surprises during work.",
+                rev_client: "LUMIRBUD Client",
+                rev_1_tag: "Turnkey Renovation",
+                rev_2_tag: "Design & Execution",
+                footer_cta: "Contact Us",
+                footer_copy: "&copy; LUMIRBUD. All Rights Reserved."
+            }
+        };
+
+        // Застосовує вибрану мову ("uk" або "en") до всіх елементів із data-i18n
+        function applyLanguage(lang) {
+            const dict = translations[lang] || translations.uk;
+            document.documentElement.lang = lang;
+            document.title = dict.doc_title;
+
+            // Оновлюємо індикатор мови в шапці та активний пункт меню
+            const currentLabel = document.getElementById("lang-current");
+            if (currentLabel) {
+                currentLabel.textContent = lang === "en" ? "EN" : "UA";
+            }
+
+            document.querySelectorAll("#lang-ua, #lang-en").forEach((item) => {
+                item.classList.toggle("active", item.dataset.lang === lang);
+            });
+
+            // Підставляємо переклад у всі елементи з data-i18n
+            document.querySelectorAll("[data-i18n]").forEach((el) => {
+                const key = el.getAttribute("data-i18n");
+                if (dict[key] !== undefined) {
+                    el.innerHTML = dict[key];
+                }
+            });
+
+            // Оновлюємо placeholder у полі вводу
+            const ctaInput = document.getElementById("cta-input");
+            if (ctaInput && dict.cta_placeholder) {
+                ctaInput.placeholder = dict.cta_placeholder;
+            }
+
+            // Зберігаємо мову, щоб не збивалась при оновленні сторінки
+            try {
+                localStorage.setItem("lumirbud_lang", lang);
+            } catch (e) {
+                // ігноруємо, якщо браузер блокує localStorage
+            }
+        }
+
+        // Навішуємо кліки на перемикачі UA / EN
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedLang = (() => {
+                try {
+                    return localStorage.getItem("lumirbud_lang") || "uk";
+                } catch (e) {
+                    return "uk";
+                }
+            })();
+
+            applyLanguage(savedLang);
+
+            document.querySelectorAll("#lang-ua, #lang-en").forEach((btn) => {
+                btn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    applyLanguage(btn.dataset.lang);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
